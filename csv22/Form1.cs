@@ -95,7 +95,10 @@ namespace csv22
 
         private void button3_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Add(); // Añade una nueva fila vacía
+            // nueva columna con el nombre que yo quiera poner
+            dataGridView1.Columns.Add("ColumnaNueva", "ColumnaNueva");
+           
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -104,6 +107,11 @@ namespace csv22
             //delete all columns
             dataGridView1.Columns.Clear();
             dataGridView1.Rows.Clear();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
